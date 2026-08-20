@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Convert JPG, JPEG, PNG, WebP, HEIC and HEIF images to JPG online."
+    >
+
+    <title>JPG Converter</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>JPG Converter</h1>
+            <p>Convert your images to high-quality JPG</p>
+        </header>
+
+
+        <!-- UPLOAD -->
+
+        <section class="upload-section">
+
+            <div id="dropZone" class="drop-zone">
+
+                <div class="upload-icon">↑</div>
+
+                <h2>Drop your images here</h2>
+
+                <p>or</p>
+
+                <button
+                    id="browseButton"
+                    class="primary-button"
+                    type="button"
+                >
+                    Browse Files
+                </button>
+
+                <p class="supported">
+                    JPG, JPEG, PNG, WebP, HEIC & HEIF
+                </p>
+
+                <input
+                    id="fileInput"
+                    type="file"
+                    accept=".jpg,.jpeg,.png,.webp,.heic,.heif"
+                    multiple
+                    hidden
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- FILES -->
+
+        <section id="fileList" class="file-list"></section>
+
+
+        <!-- SETTINGS -->
+
+        <section id="settings" class="settings" hidden>
+
+            <div class="setting-header">
+                <h2>JPG Quality</h2>
+
+                <span id="qualityValue">90%</span>
+            </div>
+
+            <input
+                id="quality"
+                type="range"
+                min="10"
+                max="100"
+                value="90"
+            >
+
+            <p>
+                Higher quality produces a larger JPG file.
+            </p>
+
+        </section>
+
+
+        <!-- ACTIONS -->
+
+        <section id="actions" class="actions" hidden>
+
+            <button
+                id="clearButton"
+                class="secondary-button"
+                type="button"
+            >
+                Clear All
+            </button>
+
+            <button
+                id="downloadAllButton"
+                class="primary-button"
+                type="button"
+            >
+                Download All
+            </button>
+
+        </section>
+
+
+        <!-- INFO -->
+
+        <section class="info">
+
+            <h2>Supported Formats</h2>
+
+            <div class="format-grid">
+
+                <div>
+                    <strong>JPG</strong>
+                    <span>✓ Supported</span>
+                </div>
+
+                <div>
+                    <strong>JPEG</strong>
+                    <span>✓ Supported</span>
+                </div>
+
+                <div>
+                    <strong>PNG</strong>
+                    <span>✓ Supported</span>
+                </div>
+
+                <div>
+                    <strong>WebP</strong>
+                    <span>✓ Supported</span>
+                </div>
+
+                <div>
+                    <strong>HEIC</strong>
+                    <span>✓ Supported</span>
+                </div>
+
+                <div>
+                    <strong>HEIF</strong>
+                    <span>✓ Supported</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+ 
+
+     <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>

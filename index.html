@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JPG Converter - Convert Images to JPG Online</title>
+
+    <meta
+        name="description"
+        content="Free online JPG converter. Convert PNG, WEBP, BMP, GIF and other images to JPG directly in your browser."
+    >
+
+    <meta name="theme-color" content="#0b0f19">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-icon">J</span>
+        <span>JPG<span class="logo-highlight">Convert</span></span>
+    </div>
+
+    <nav>
+        <a href="#converter">Converter</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="badge">
+            ⚡ Fast • Free • Private
+        </div>
+
+        <h1>
+            Convert Images to
+            <span>JPG</span>
+        </h1>
+
+        <p>
+            Convert PNG, WEBP, BMP, GIF and other image files
+            to high-quality JPG images directly in your browser.
+        </p>
+
+    </section>
+
+
+    <!-- CONVERTER -->
+
+    <section class="converter-section" id="converter">
+
+        <div class="converter-card">
+
+            <div
+                class="drop-zone"
+                id="dropZone"
+            >
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <h2>Drop your images here</h2>
+
+                <p>or click to browse from your device</p>
+
+                <button
+                    class="upload-button"
+                    id="browseButton"
+                    type="button"
+                >
+                    Choose Images
+                </button>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept="image/*"
+                    multiple
+                    hidden
+                >
+
+                <small>
+                    PNG, WEBP, BMP, GIF, JPEG and more
+                </small>
+
+            </div>
+
+
+            <!-- SETTINGS -->
+
+            <div
+                class="settings"
+                id="settings"
+                hidden
+            >
+
+                <div class="settings-header">
+                    <h3>Conversion Settings</h3>
+                </div>
+
+                <div class="quality-row">
+
+                    <div>
+                        <label for="quality">
+                            JPG Quality
+                        </label>
+
+                        <p>
+                            Higher quality = larger file size
+                        </p>
+                    </div>
+
+                    <div class="quality-control">
+
+                        <input
+                            type="range"
+                            id="quality"
+                            min="10"
+                            max="100"
+                            value="90"
+                        >
+
+                        <span id="qualityValue">90%</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILE LIST -->
+
+            <div
+                class="file-list"
+                id="fileList"
+            ></div>
+
+
+            <!-- ACTIONS -->
+
+            <div
+                class="actions"
+                id="actions"
+                hidden
+            >
+
+                <button
+                    class="secondary-button"
+                    id="clearButton"
+                    type="button"
+                >
+                    Clear All
+                </button>
+
+                <button
+                    class="primary-button"
+                    id="downloadAllButton"
+                    type="button"
+                >
+                    Download All
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section
+        class="info-section"
+        id="how-it-works"
+    >
+
+        <div class="section-title">
+
+            <span>HOW IT WORKS</span>
+
+            <h2>Convert your image in seconds</h2>
+
+            <p>
+                No complicated software. Just upload, convert and download.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <h3>Upload</h3>
+
+                <p>
+                    Select one or multiple images from your device.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <h3>Convert</h3>
+
+                <p>
+                    Your image is converted to JPG directly in your browser.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <h3>Download</h3>
+
+                <p>
+                    Download your converted JPG image instantly.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section
+        class="about-section"
+        id="about"
+    >
+
+        <div class="about-card">
+
+            <h2>Private & Secure</h2>
+
+            <p>
+                Your images are processed locally in your browser.
+                They don't need to be uploaded to a server for conversion.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        JPG<span>Convert</span>
+    </div>
+
+    <p>
+        Free online image converter.
+    </p>
+
+    <p class="copyright">
+        © 2026 JPGConvert. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
